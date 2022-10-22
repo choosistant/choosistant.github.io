@@ -10,7 +10,7 @@ title: Home
 
 Choosistant is an ML-powered system which helps you decide which product to buy by summarizing the pros and cons from written product reviews. The system leverages an NLP model to predict spans of text describing product features which are considered to be good and bad by reviewers.
 
-<img src="/assets/img/choosistant-input-output.png" alt="Input and output of the system." width="400" />
+<img src="/assets/img/choosistant-input-output.png" alt="Input and output of the system." />
 
 The pipeline looks as follows:
 
