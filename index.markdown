@@ -8,13 +8,13 @@ title: Home
 
 ## What is it?
 
-Choosistant is an ML-powered system which helps you decide which product to buy by summarizing the pros and cons from written product reviews.
+Choosistant is an ML-powered system which helps you decide which product to buy by summarizing the pros and cons from written product reviews. The system leverages an NLP model to predict spans of text describing product features which are considered to be good and bad by reviewers.
 
-At a high level, Choosistant leverages an NLP model (Extractive Question Answering) to predict which spans of text describe the advantages and disadvantages of the product under review.
+<img src="/assets/img/choosistant-input-output.png" alt="Input and output of the system." width="400" />
+
+The pipeline looks as follows:
 
 ![High level pipeline of choosistent](/assets/img/choosistant-high-level-pipeline.png)
-
-If you want to more about how the NLP model works, please read the articles on Extractive Question Answering written by the folks at [Hugging Face](https://huggingface.co/tasks/question-answering){:target="_blank"} and [deepset](https://www.deepset.ai/blog/modern-question-answering-systems-explained){:target="_blank"}.
 
 ## Who made it?
 
@@ -66,7 +66,9 @@ The problem is as follows:
 - We want to extract specific phrases in the original text.
 - The extracted text must highlight product features which are considered good or bad by other consumers.
 
-There are several ways to frame this problem as a machine learning task. One approach is to perform traditional sentiment analysis and capture words that get high attention. However, it is not clear how to aggregate these results into coherent pros and cons. Another approach is to formulate the problem as a summarization task. The main issue is that summarization models [tend to hallucinate](https://towardsdatascience.com/entity-level-factual-consistency-in-abstractive-text-summarization-cb19e8a48397) i.e. include phrases and words that are not part of the original text. We found that the best method is to cast the problem as an Extractive Question Answering task. This alleviates the hallucination issue with text summarizers.
+There are several ways to frame this problem as a machine learning task. One approach is to perform traditional sentiment analysis and capture words that get high attention. However, it is not clear how to aggregate these results into coherent pros and cons. Another approach is to formulate the problem as a summarization task. The main issue is that summarization models [tend to hallucinate](https://towardsdatascience.com/entity-level-factual-consistency-in-abstractive-text-summarization-cb19e8a48397) i.e. include phrases and words that are not part of the original text. We found that the best method is to cast the problem as an Extractive Question Answering (QA) task. This alleviates the hallucination issue with text summarizers.
+
+If you want to more about how Extractive QA works, please read the excellent articles written by the folks at [Hugging Face](https://huggingface.co/tasks/question-answering){:target="_blank"} and [deepset](https://www.deepset.ai/blog/modern-question-answering-systems-explained){:target="_blank"}.
 
 ## Systems overview
 
