@@ -2,12 +2,12 @@
 
 ## Development Setup
 
-1. Install Ruby and [Jekyll](https://jekyllrb.com/docs/).
+1. Install Ruby 3 via [rbenv](https://github.com/rbenv/rbenv).
 
-2. Install Ruby packages:
+2. Install Ruby gems:
 
     ```bash
-    bundle install
+    bundle
     ```
 
 3. Run the site locally:
