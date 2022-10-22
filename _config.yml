@@ -38,8 +38,8 @@ plugins:
 
 color-scheme: light
 # google_analytics: [Your Google Analytics tracking ID]
-# logo: /assets/img/<logo_file>
-# favicon: true
+logo: /assets/img/choosistant-logo.png
+favicon: true
 
 sidebar:
   - name: GitHub
