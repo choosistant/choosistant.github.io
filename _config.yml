@@ -37,7 +37,7 @@ plugins:
   - jekyll-remote-theme
 
 color-scheme: light
-# google_analytics: [Your Google Analytics tracking ID]
+google_analytics: G-2FX8GG6732
 logo: /assets/img/choosistant-logo.png
 favicon: true
 
