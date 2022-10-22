@@ -108,10 +108,19 @@ Use a true model registry that allows us to not only track model versions but al
 </details>
 &nbsp;
 
-
 ### Inference service
 
 Our models were downloaded by the inference server and used to make predictions. We used FastAPI to expose a `/predict` REST-endpoint. The app assigns each request a unique ID and logs information about the request, the output of the model, inference time and device (CPU or GPU). The prediction ID is sent as part of the HTTP response such that any logging that happens on the client side can be linked to the predictions made by inference service.
+
+<details>
+<summary><em>Reflections</em></summary>
+
+<ul>
+<li>The inference speed on GPU is around 800 ms while it is 10 times slower on the CPU. To speed things up, we are considering experimeting <a href="https://huggingface.co/docs/optimum/index" target="_blank">Hugging Face Optimum</a>.</li>
+</ul>
+
+</details>
+&nbsp;
 
 ### User Interface
 
