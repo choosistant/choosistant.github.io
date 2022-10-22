@@ -36,7 +36,7 @@ plugins:
   - jemoji
   - jekyll-remote-theme
 
-color-scheme: auto
+color-scheme: light
 # google_analytics: [Your Google Analytics tracking ID]
 # logo: /assets/img/<logo_file>
 # favicon: true
