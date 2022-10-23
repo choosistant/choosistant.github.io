@@ -42,7 +42,7 @@ logo: /assets/img/choosistant-logo.png
 favicon: true
 
 sidebar:
-  - name: GitHub
+  - name: Choosistant on GitHub
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/choosistant
 
