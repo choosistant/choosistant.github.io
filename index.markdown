@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: Home 
 ---
@@ -11,10 +8,6 @@ title: Home
 Choosistant is an ML-powered system which helps you decide which product to buy by summarizing the pros and cons from written product reviews. The system leverages an NLP model to predict spans of text describing product features which are considered to be good and bad by reviewers.
 
 ![Input and output of the system.](/assets/img/choosistant-input-output.png)
-
-The pipeline looks as follows:
-
-![High level pipeline of choosistent](/assets/img/choosistant-high-level-pipeline.png)
 
 ## Who made it?
 
@@ -74,7 +67,7 @@ There are several ways to frame this problem as a machine learning task. One app
 
 If you want to more about how Extractive QA works, please read the excellent articles written by the folks at [Hugging Face](https://huggingface.co/tasks/question-answering){:target="_blank"} and [deepset](https://www.deepset.ai/blog/modern-question-answering-systems-explained){:target="_blank"}.
 
-## Systems overview
+## System overview
 
 ![Choosistant System Diagram](/assets/img/choosistant-system-overview.png)
 
